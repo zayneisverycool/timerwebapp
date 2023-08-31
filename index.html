@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>timer web app</title>
+  <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+  <script src="app.js"></script>
+</head>
+
+<body>
+  <div class="timer">
+    <button onclick="hourUp()">up</button>
+    <p id="hour">0</p>
+    <button onclick="hourDown()">down</button>
+    <p>H</p>
+  </div>
+
+  <div class="timer">
+    <button onclick="minUp()">up</button>
+    <p id="minute">0</p>
+    <button onclick="minDown()">down</button>
+    <p>M</p>
+  </div>
+
+  <div class="timer">
+    <button onclick="secUp()">up</button>
+    <p id="second">0</p>
+    <button onclick="secDown()">down</button>
+    <p>S</p>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <button onclick="timerStart()">START TIMER</button>
+
+  <div class="modal" id="myModal">
+      <div class="modal-content">
+        <p>time is up</p>
+        <button onclick="closeModal()">CLOSE</button>
+      </div>
+  </div>
+  </body>
+</html>
